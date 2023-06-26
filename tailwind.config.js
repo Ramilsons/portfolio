@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +14,21 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      textShadow: {
+        DEFAULT: '0px 2px 0px rgba(0, 0, 0, 0.25)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 }
