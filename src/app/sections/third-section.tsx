@@ -24,6 +24,15 @@ export default function ThirdSection() {
             imageName: 'fruits.png'
         },
         {
+            name: 'Jogo da Memória',
+            resume: 'Jogo da memória para jogar em dupla',
+            icon: '🎮',
+            languages: ['JavaScript', 'HTML','CSS'],
+            description: 'Jogo da memória com o tema: animais. Fiz para me divertir e trabalhar a minha lógica.',
+            link: 'https://memory-game-two-tau.vercel.app/',
+            imageName: 'memory-game.png'
+        },
+        {
             name: 'Controle de Despesas',
             resume: 'Site para ajudar no controle na gestão das despesas',
             icon: '💸',
@@ -31,7 +40,7 @@ export default function ThirdSection() {
             description: 'Projeto desenvolvido durante um curso onde o desafio era criar a aperfeiçoar essa página.',
             link: 'https://controle-despesas-ramils.vercel.app/',
             imageName: 'project-control.png'
-        }
+        },
     ]
 
     return (

@@ -30,7 +30,7 @@ export default function EachSlideCard({project}: Props){
                 <div className={toggleMoreDetails ? 'bg-[#F7F7F7] p-5 text-sm h-[190px]' : 'hidden'}>
                     <p>{project.description}</p>
     
-                    <h6 className='text-xs font-bold mt-2'>Used technologies:</h6>
+                    <h6 className='text-xs font-bold mt-2'>Technologias usadas:</h6>
                     <p className="mb-6">{project.languages.join(', ')}</p>
 
                     <a href={project.link} target="_blank" className="pt-4 text-[var(--blue)]">Acessar</a>
