@@ -7,20 +7,26 @@ export default function FifthSection() {
                 <OccupationCard 
                     year='2022' 
                     company='Media.Monks Brasil' 
-                    occupation='Web Development Analyst'
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum lobortis elit, quis pellentesque elit semper sit amet. Nulla sed ex ut urna ornare semper.'
-                    descriptionTwo='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-                    technologies={['React, TypeScript']}
+                    occupation='Web Development Analyst Junior'
+                    description='Responsável pela evolução de projetos e-commerces
+                    e blogs, com foco em melhorar a experiência dos
+                    usuário, criação de novas funcionalidades e melhoria
+                    na performance do site.'
+                    descriptionTwo='Além disso, mantendo comunicação
+                    constante com os clientes para o andamento do
+                    projeto.'
+                    technologies={['React', 'JavaScript', 'HTML', 'CSS']}
                     isDark={true}
                 />             
             </div>
             <OccupationCard 
                 year='2022' 
                 company='Media.Monks Brasil' 
-                occupation='Web Development Analyst'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum lobortis elit, quis pellentesque elit semper sit amet. Nulla sed ex ut urna ornare semper.'
-                descriptionTwo='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-                technologies={['React, TypeScript']}
+                occupation='Web Development Stategist'
+                description='Responsável pela solução de problemas em sites,
+                aplicação de boas práticas de SEO e CRO nos e-commerces e automação de processos para
+                diminuição do trabalho manual do time'
+                technologies={['HTML', 'JavaScript', 'CSS', 'PHP']}
                 isDark={true}
             />
         </div>

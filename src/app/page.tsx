@@ -6,6 +6,7 @@ import SecondSection from "./sections/second-section";
 import ThirdSection from "./sections/third-section";
 import FourthSection from "./sections/fourth-section";
 import FifthSection from "./sections/fifth-section";
+import SixthSection from './sections/sixth-section';
 
 export default function Home() {
     const [scrollPrevious, setScrollPrevious] = useState(0);
@@ -25,6 +26,7 @@ export default function Home() {
             <ThirdSection />
             <FourthSection />
             <FifthSection />
+            <SixthSection />
         </main>
     )
 }

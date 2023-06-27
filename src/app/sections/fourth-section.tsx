@@ -7,14 +7,18 @@ export default function FourthSection() {
     return (
         <ContainerSections>
             <MainEmoji text="💼"/>
-            <Title text={'Career'} />
+            <Title text={'Carreira'} />
             <OccupationCard 
                 year='2023' 
                 company='Media.Monks Brasil' 
                 occupation='Web Development Analyst'
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum lobortis elit, quis pellentesque elit semper sit amet. Nulla sed ex ut urna ornare semper.'
-                descriptionTwo='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-                technologies={['React, TypeScript']}
+                description='Responsável pela criação de blogs, análise e melhoria de
+                performance de sites, criação de códigos para testes
+                A/B e suporte no desenvolvimento da área com a
+                criação de documentações, capacitação de analistas e
+                participação em propostas comerciais.
+                '
+                technologies={['Next', 'React', 'VTEX', 'TypeScript', 'Sass']}
                 isDark={false}
             />
         </ContainerSections>
