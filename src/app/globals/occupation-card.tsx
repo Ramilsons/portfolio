@@ -19,7 +19,7 @@ export default function OccupationCard({year, company, occupation, description, 
             <p className={paragraphStyle}>{description}</p>
             { descriptionTwo ? <p className={paragraphStyle}>{descriptionTwo}</p> : '' }
 
-            <p className={`${isDark? 'text-[#fff]' : 'text-[#37352F]'} mt-[6px] text-sm`}>{'Technologies: '+technologies.join(', ')}</p>
+            <p className={`${isDark? 'text-[#fff]' : 'text-[#37352F]'} mt-[6px] text-sm`}>{'Tecnologias:: '+technologies.join(', ')}</p>
         </div>
     )
 }

@@ -24,6 +24,24 @@ export default function ThirdSection() {
             imageName: 'fruits.png'
         },
         {
+            name: 'Happy (NLW)',
+            resume: 'Site que conecta pessoas à casas de acolhimento',
+            icon: '',
+            languages: ['Node', 'JavaScript', 'Express', 'Handlebars'],
+            description: 'Realizado durante a semana NLW da RocketSeat. Site conta com cadastro e interação com mapa.',
+            link: '',
+            imageName: 'nlw.png'
+        },
+        {
+            name: 'Portfólio',
+            resume: 'Essa página aqui que você está navegando',
+            icon: '',
+            languages: ['TypeScript', 'Tailwind', 'Next', 'React'],
+            description: 'Página conta com projetos, apresentação, experiência profisisonal e contato.',
+            link: '',
+            imageName: 'portfolio.png'
+        },
+        {
             name: 'Jogo da Memória',
             resume: 'Jogo da memória para jogar em dupla',
             icon: '🎮',

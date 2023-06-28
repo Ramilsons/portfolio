@@ -1,6 +1,9 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import { useRef } from "react";
 
+
+import useScrollSnap from "react-use-scroll-snap";
 import FirstSection from "./sections/first-section";
 import SecondSection from "./sections/second-section";
 import ThirdSection from "./sections/third-section";
@@ -9,18 +12,13 @@ import FifthSection from "./sections/fifth-section";
 import SixthSection from './sections/sixth-section';
 
 export default function Home() {
-    const [scrollPrevious, setScrollPrevious] = useState(0);
+    const scrollRef = useRef(null);
+    useScrollSnap({ ref: scrollRef, duration: 50, delay: 20 });
 
-    function goToNextView() {
-        console.log(scrollPrevious);
-    }
 
-    useEffect(() => {
-        document.addEventListener('scroll', goToNextView)
-    }, [])
 
     return (
-        <main className="bg-[#fff] box-content scroll-smooth text-[#37352F]">
+        <main ref={scrollRef} className="bg-[#fff] box-content scroll-smooth text-[#37352F]">
             <FirstSection /> 
             <SecondSection />
             <ThirdSection />
