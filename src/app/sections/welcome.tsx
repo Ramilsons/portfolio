@@ -20,12 +20,12 @@ export default function FirstSection() {
                 </section>
                 <section className="hidden lg:flex gap-5 w-[45%]">
                     <div className="flex flex-col gap-5 w-[50%] mt-[-1.25rem]">
-                        <CardWithLink label={links[1].name} target={links[1].link} image="gradientt.png" content="Sobre mim" />
-                        <CardWithLink label={links[4].name} target={links[4].link} image="contact.png" />
+                        <CardWithLink label={links[1].name} target={links[1].link} image="gradient-at.png" content="Sobre mim" />
+                        <CardWithLink label={links[4].name} target={links[4].link} image="contact-at.png" />
                     </div>
                     <div className="flex flex-col gap-5 w-[50%]">
-                        <CardWithLink label={links[2].name} target={links[2].link} image="projects.png" content="Conheça meus projetos" />
-                        <CardWithLink label={links[3].name} target={links[3].link} image="gradient-green.png" content="Carreira" />
+                        <CardWithLink label={links[2].name} target={links[2].link} image="projects-at.png" content="Conheça meus projetos" />
+                        <CardWithLink label={links[3].name} target={links[3].link} image="gradient-green-at.png" content="Carreira" />
                     </div>
                 </section>
             </div>
