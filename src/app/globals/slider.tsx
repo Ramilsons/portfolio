@@ -33,7 +33,7 @@ export default function Slider({projects}: Props) {
                 { 
                     projects.map((eachProject) => {
                         return (
-                            <EachSlideCard project={eachProject} />
+                            <EachSlideCard key={eachProject.name} project={eachProject} />
                         )
                     }) 
                 }
