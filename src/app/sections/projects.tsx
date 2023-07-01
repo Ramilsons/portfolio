@@ -21,7 +21,7 @@ export default function ThirdSection() {
             languages: ['HTML', 'JavaScript', 'CSS'],
             description: 'Realizado para participação do processo seletivo da Media.Monks onde vários fatores foram análisados, entre eles o SEO.',
             link: 'https://ramilsons.github.io/ProcessoSeletivo/',
-            imageName: 'fruits.png'
+            imageName: 'fruits-web.png'
         },
         {
             name: 'Happy (NLW)',
@@ -48,7 +48,7 @@ export default function ThirdSection() {
             languages: ['JavaScript', 'HTML','CSS'],
             description: 'Jogo da memória com o tema: animais. Fiz para me divertir e trabalhar a minha lógica.',
             link: 'https://memory-game-two-tau.vercel.app/',
-            imageName: 'memory-game.png'
+            imageName: 'memory.png'
         },
         {
             name: 'Controle de Despesas',
@@ -57,7 +57,7 @@ export default function ThirdSection() {
             languages: ['React', 'CSS'],
             description: 'Projeto desenvolvido durante um curso onde o desafio era criar a aperfeiçoar essa página.',
             link: 'https://controle-despesas-ramils.vercel.app/',
-            imageName: 'project-control.png'
+            imageName: 'control-prices.png'
         },
     ]
 

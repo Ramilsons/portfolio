@@ -1,4 +1,4 @@
-import globalsStyle from "./globals-style"
+import globalsStyle from "../utils/globals-style"
 
 interface Props{
     text: String,

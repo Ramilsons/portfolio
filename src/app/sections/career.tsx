@@ -2,12 +2,12 @@ import MainEmoji from "../globals/main-emoji";
 import Title from "../globals/title";
 import OccupationCard from "../globals/occupation-card";
 
-import globalStyle from "../globals/globals-style";
+import globalStyle from "../utils/globals-style";
 
 export default function FourthSection() {
     return (
-        <div className={globalStyle.darkText} id="career">
-            <div className="sm:w-[90%] ml-[auto] mr-[auto]">
+        <div className={`${globalStyle.darkText}`} id="career">
+            <div className={`sm:w-[100%] ml-[auto] mr-[auto] ${globalStyle.maxWidthScreen} lg:ml-0`}>
                 <MainEmoji text="💼"/>
                 <Title text={'Carreira'} isDark={true} />
                 <OccupationCard 

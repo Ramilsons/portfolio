@@ -28,9 +28,6 @@ export default function EachSlideCard({project}: Props){
                 />
                 <div className={toggleMoreDetails ? 'bg-[#F7F7F7] p-5 text-sm h-[190px]' : 'hidden'}>
                     <p>{project.description}</p>
-    
-                    <h6 className='text-xs font-bold mt-2'>Tecnologias usadas:</h6>
-                    <p className="mb-4">{project.languages.join(', ')}</p>
 
                     {project.link ? <a href={project.link} target="_blank" className="pt-4 text-[var(--blue)]">Acessar</a> : ''}
                 </div>
@@ -39,6 +36,9 @@ export default function EachSlideCard({project}: Props){
                         <h4>{project.name}</h4>
                     </div>
                     <h6 className="text-xs font-semibold">{project.resume}</h6>
+
+                    <h6 className='text-xs font-bold mt-4'>Tecnologias utilizadas:</h6>
+                    <p className="text-sm mt-2">{project.languages.join(', ')}</p>
                 </div>
             </div>
         </li>

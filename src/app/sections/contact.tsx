@@ -1,12 +1,13 @@
 import MainEmoji from "../globals/main-emoji";
 import Title from "../globals/title";
-import LinkNavigation from "../globals/link";
-import DownloadLink from "../globals/download-link";
+import LinkNavigation from "../globals/header/link";
+import DownloadLink from "../globals/footer/download-link";
+import globalStyle from "../utils/globals-style";
 
 export default function SixthSection() {
     return(
-        <div className="relative flex flex-col item-left justify-center h-[100vh] p-7 bg-[#F1F1F1;] snap-start" id="contact">
-            <div className="sm:w-[90%] sm:ml-[auto] sm:mr-[auto]">
+        <div className="relative flex flex-col item-left justify-center h-[100vh] p-7 bg-[#F1F1F1;] snap-start lg:pl-0" id="contact">
+            <div className={`sm:w-[90%] sm:ml-[auto] sm:mr-[auto] ${globalStyle.maxWidthScreen}`}>
                 <MainEmoji text="💬" />
                 <Title text="E aí? Bora codar?" />
 

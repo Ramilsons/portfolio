@@ -21,10 +21,10 @@ export default function Slider({projects}: Props) {
     const [showClickIcon, setShowClickIcon] = useState(true);
 
     return (
-        <div className="overflow-scroll scroll-smooth snap-mandatory w-[100%] relative" onScroll={() => setShowGif(false)} onClick={() => setShowClickIcon(false)}>
+        <div className="overflow-x-scroll scroll-smooth snap-mandatory w-[100%] relative" onScroll={() => setShowGif(false)} onClick={() => setShowClickIcon(false)}>
             <Image 
                 src="/images/click-icon.png"
-                alt="click for more details"
+                alt="clique para mais detalhes"
                 className={`sticky w-[28px] h-[28px] top-9 left-[230px] ${showClickIcon ? '' : 'opacity-0'}`}
                 width={28}
                 height={32}
@@ -39,7 +39,7 @@ export default function Slider({projects}: Props) {
                 }
             </ul>
             <div className={`w-[100%] relative justify-center mt-[-10px] h-[30px] ${showGif ? '' : 'opacity-0'}`}>
-                <Image src='/images/horizontal-scroll.png' className="sticky left-[45vw]"  alt="Scrolling to view another projects" width={30} height={30} />
+                <Image src='/images/horizontal-scroll.png' className="sticky left-[45vw]"  alt="Faça a movimentação lateral para revelar mais projetos" width={30} height={30} />
             </div>
         </div>
     )
