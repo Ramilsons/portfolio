@@ -22,6 +22,7 @@ export default function FourthSection() {
                     '
                     technologies={['Next', 'React', 'VTEX', 'TypeScript', 'Sass']}
                     isDark={true}
+                    mostRecent={true}
                 />
             </div>
         </div>
