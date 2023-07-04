@@ -19,7 +19,6 @@ export default function Header() {
             setHeaderPadding(true);
         }  
     }, [])
-
     
     return (
         <div className={`${headerPadding ? 'w-[100vw] fixed max-w-[1240px] right-[50%] left-[50%] z-30 pr-14' : ''}`}>
