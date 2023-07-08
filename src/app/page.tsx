@@ -16,11 +16,20 @@ export default function () {
         document.getElementById('scrollView')?.addEventListener('scroll', () => {
             const distanceTopFirstSectionCareer = document.getElementById('career')?.getBoundingClientRect().top || 0;
             const distanceTopSecondSectionCareer = document.getElementById('secondCareer')?.getBoundingClientRect().top || 0;
+            const distanceTopContainerCareer = document.getElementById('careerContainer')?.getBoundingClientRect().top || 0;
 
-            if(distanceTopFirstSectionCareer <= 0 && distanceTopSecondSectionCareer >= ((window.screen.availHeight * -1) + 60)){
-                setOnDarkSection(true);
+            if(window.screen.availWidth < 1024){
+                if(distanceTopFirstSectionCareer <= 0 && distanceTopSecondSectionCareer >= ((window.screen.availHeight * -1) + 60)){
+                    setOnDarkSection(true);
+                }else{
+                    setOnDarkSection(false);
+                }
             }else{
-                setOnDarkSection(false);
+                if(distanceTopContainerCareer <= 0 && distanceTopContainerCareer > ((window.screen.availHeight * -0.5) + 60)){
+                    setOnDarkSection(true);
+                }else{
+                    setOnDarkSection(false);
+                }             
             }
         });
     });
@@ -31,7 +40,7 @@ export default function () {
             <Welcome /> 
             <About />
             <Projects />
-            <div className={`lg:h-[100vh] lg:bg-[#433F3F]  snap-start`}>
+            <div className={`lg:h-[100vh] lg:bg-[#433F3F]  snap-start`} id="careerContainer">
                 <div className={`lg:flex lg:items-center justify-center lg:h-[100vh] lg:ml-auto lg:mr-auto`}>
                     <div className={`lg:flex lg:items-end justify-between lg:w-[90%] ${globalsStyle.maxWidthScreen}`}>
                         <Career />
