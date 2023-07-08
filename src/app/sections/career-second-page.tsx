@@ -4,7 +4,7 @@ import globalStyle from "../utils/globals-style";
 
 export default function FifthSection() {
     return (
-        <div className={globalStyle.darkText}>
+        <div className={globalStyle.darkText} id="secondCareer">
             <div className={`sm:w-[90%] ml-[auto] mr-[auto] ${globalStyle.maxWidthScreen} lg:ml-0 lg:mr-0`}>
                 <div className="mb-11">
                     <OccupationCard 
