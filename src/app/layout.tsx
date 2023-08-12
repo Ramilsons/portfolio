@@ -4,7 +4,7 @@ import { Libre_Franklin } from 'next/font/google'
 const libre_franklin = Libre_Franklin({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Ramilson Silva | Portofolio',
+  title: 'Ramilson Silva | Portfolio',
   description: 'Veja mais sobre os projetos, a experiência, história do Desenvolvedor Web Ramilson Felix da Silva.',
 }
 
