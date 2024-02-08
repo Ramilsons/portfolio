@@ -6,6 +6,15 @@ import Title from "../globals/title";
 export default function ThirdSection() {
     let allProjects = [
         {
+            name: 'Blog do Ramils',
+            resume: 'Site onde posto meu artigos com dicas para Devs',
+            icon: '✍🏼',
+            languages: ['Next', 'Tailwind', 'PrismicCMS'],
+            description: 'Criado com intuito de ajudar outros Devs com dicas à nível de código e também à nível de carreira.',
+            link: 'https://blogramils.vercel.app/',
+            imageName: 'blog.png'
+        },
+        {
             name: 'JRT Medicamentos',
             resume: 'App para alertar usuários à tomar o medicamento no horário correto',
             icon: '💊',
